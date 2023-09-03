@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.cnt{
+    padding: 0.5em;
+
+}
+
+
+h2{
+    font-family: "poppins";
+    margin-bottom: -0.5em;
+}
+
+h1{
+    font-family: "Poppins";
+    color: #213552;
+
+}
+h3{
+    font-family: "Poppins";
+    font-size: 0.85rem;
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+}
+
+
+.lgl{
+    padding: 1em;
+    background: linear-gradient(180deg, #234372 0%, #0E7DAC 100%);
+}
+
+.gl{
+    color: white;
+    font-family: "krona one";
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.imggl{
+    width: 100%;
+}
+
+.cntgl{
+    margin-top: 1em;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Poppins";
+}
+.dsg{
+    text-align: right;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.ceo img{
+    width: 100%;
+}

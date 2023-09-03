@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <section id="loader">
+        <script>
+            window.onload = function() {
+          const loader = document.getElementById('loader');
+          const main = document.getElementById('main');
+        
+          loader.style.display = 'none';
+          main.style.display = 'block';
+        
+          
+        };
+        
+         </script>
+        <style>
+             #loader{
+  margin-top: 2em;
+  padding: 1em;
+ }
+
+
+ .item .item-image {
+  width: 50px;
+  height: 50px;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+.item .content .title {
+  height: 12px;
+  margin: 10px;
+  width: 95%;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+.item .content .short-title {
+  height: 12px;
+  margin: 10px;
+  width: 95%;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+      background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+      background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+        </style>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section id="main">
+        <div class="gifplayer">
+            <img src="img/dead.gif" alt="" width="100%">
+        </div>
+        <div class="cnt">
+            <p><h1>We are <span class="blue">working Hard</span> </h1></p>
+            <p><h2>to reach in your area ; <span class="yellow">please be patient</span> 🥺 </h2></p>
+            fill the form to get notified as soon as  we are live in your location <p>
+                <button class="gn" id="gn">Get Notified</button>
+        </div>
+
+    </section>
+    
+    
+    
+</body>
+</html>
+<script>
+    const navButton = document.getElementById('gn');
+
+navButton.addEventListener('click', function() {
+  // Change the window location to the desired URL
+  window.location.href = 'https://youtube.com';
+});
+
+</script>

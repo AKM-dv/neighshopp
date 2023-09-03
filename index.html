@@ -3,18 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neighshop</title>
+    <title>Neighweb</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
-<body>
-    <style>
-        body{
-            background-color: #262626;
-        }
-    </style>
-    <div class="cnt">
-        <img src="neighcoming.svg" alt="" width="100%">
+<body id="body">
+    
+    <div class="nav">
+        
+    <div class="imholder">
+        <img src="img/tit.png" alt="" width="100%">
+
+    </div>
+    <nav id="navbar">
+        <ul id="navbtn" class="no-select">
+           <button>Home</button>
+          <button>Shop</button> 
+          <button>Blogs</button>
+           <button>Services</button> 
+          <button>About</button>
+
+
+
+
+           <!-- <button><li class="no-select">Shop</li></button> 
+           <button><li class="no-select">Blogs</li></button> 
+           <button><li class="no-select">Services</li></button> 
+           <button><li class="no-select">About</li></button>  -->
+
+
+
+        </ul>
+    </nav>
+    </div>
+
+  
+    
+    <section id="loader">
+        <script>
+            window.onload = function() {
+          const loader = document.getElementById('loader');
+          const main = document.getElementById('main');
+        
+          loader.style.display = 'none';
+          main.style.display = 'block';
+        
+          
+        };
+        
+         </script>
+
+
+
+        <style>
+             #loader{
+                display: flex;
+                flex-direction: column;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+  height: 100vh;
+ }
+
+
+ .item .item-image {
+  width: 90%;
+  height: 90%;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+.item .content .title {
+  height: 150px;
+  margin: 5px 0px;
+  width: 95%;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+.item .content .short-title {
+  height: 20px;
+   margin: 5px 0px;
+
+  width: 95%;
+  animation: loader 3s infinite ease-in-out;
+  -webkit-animation: loader 3s infinite ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+      background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+      background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+      background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+        </style>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body item">
+                            <div class="d-flex">
+                                <div class="item-image"></div>
+                                <div class="content">
+                                    <div class="title"></div>
+                                    <div class="short-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section id="frameholder">
+        <iframe src="/home.html" frameborder="0" id="frame"></iframe>
+
+
+    </section>
+
+<!-- ------------responsive ------------ -->
+
+    <div id="data" style="display: none;">
+        <div id="src"></div>
+        <div id="width"></div>
+
 
     </div>
     
+<!-- ------------responsive ------------ -->
+
+
+    
+    
+    
+    
 </body>
 </html>
+
+</script>
+<script>const buttons = document.querySelectorAll('#navbtn button');
+    const iframe = document.getElementById('frame');
+    
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const buttonText = button.textContent.toLowerCase();
+        if (buttonText=='shop'){
+        document.getElementById('body').style.background="black"
+        document.getElementById('navbtn').style.color="white"
+        // document.getElementById('body').classList.remove('btnservicesdivcallfunc')
+
+
+
+    }   
+    else if (buttonText=='services'){
+        console.log(buttonText)
+        
+        document.body.style.background = "  #2B2B2B"
+
+
+
+
+        document.getElementById('navbtn').style.color="white"
+
+    }
+    else if (buttonText=="home"){
+        document.getElementById('body').style.background="white"
+        document.getElementById('navbtn').style.color="#283a56"
+     
+
+    }
+    else if (buttonText=="blogs"){
+        document.getElementById('body').style.background="white"
+        document.getElementById('navbtn').style.color="#283a56"
+        console.log("removed----")
+       
+        console.log("removed----")
+
+
+    }
+    else if (buttonText=="about"){
+        document.getElementById('body').style.background="white"
+        document.getElementById('navbtn').style.color="#283a56"
+       
+
+    }
+    
+    
+    else{
+        document.getElementById('body').style.background="white"
+        document.getElementById('navbtn').style.color="#283a56"
+   
+
+        
+
+
+    }
+    //     // changetheme(buttonText)
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+   if (screenWidth > 786){
+    const newSrc = `${buttonText}pc.html`;
+       
+        iframe.src = newSrc;
+
+   }
+   else {
+    const newSrc = `${buttonText}.html`;
+       
+        iframe.src = newSrc;
+
+   }
+        
+        buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+    
+    button.classList.add('active');
+  });
+        
+  buttons[0].classList.add('active');
+
+     
+
+    });</script>
+
+
+<script>
+  
+const iframeLoader = document.getElementById('loader');
+
+
+
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    const newSrc = button.getAttribute('data-src');
+    showLoader();
+
+  });
+});
+
+iframe.addEventListener('load', function() {
+  hideLoader(); 
+});
+
+function showLoader() {
+  document.getElementById('frameholder').style.display="none"
+
+  iframeLoader.style.display = 'flex';
+}
+
+function hideLoader() {
+  iframeLoader.style.display = 'none';
+  document.getElementById('frameholder').style.display="block"
+
+}
+
+</script>
+
+
+<!-- ------------responsive ------------ -->
+
+<script>
+
+    const src=document.getElementById("src")
+    const width=document.getElementById("width")
+
+
+function check(){
+        const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        cwidth=screenWidth
+if (screenWidth < 768) { // Adjust this threshold as needed
+    iframe.src = 'home.html';
+    src.innerHTML="home"
+    width.innerHTML=screenWidth
+     // New URL for small screens
+} else {
+    iframe.src = 'homepc.html';
+    src.innerHTML="homepc"
+    width.innerHTML=screenWidth
+
+     // Default URL for larger screens
+}
+    }
+
+check()
+
+
+</script>
+<!-- ------------responsive ------------ -->

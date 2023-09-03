@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    transition: background-color 0.5s ease-in;
+    overflow-x: hidden;}
+
+    
+@media screen and (max-width: 500px) {
+    
+
+.btnservicesdivcallfunc{
+    background-color: black;
+    background-image: url(img/bgbricks.png);
+    background-size: contain;
+}
+
+
+.imholder{
+    display: flex;
+    width: 50%;
+    margin: -9px;
+}
+nav{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+nav ul{
+    margin-top: 0.5em;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: #283a56;
+    user-select: none;
+    font-family: 'Poppins';
+    transition: color 0.5s ease-in;
+
+
+
+}
+/* nav ul button{
+    border: 0;
+    background-color: transparent;
+    font-family: "poppins";
+    user-select: none;
+
+   
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border 0.5s ease;
+} */
+nav ul li{
+    font-family: "poppins";
+    user-select: none;
+
+   
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border 0.5s ease;
+}
+iframe{
+    width: 100%;
+height: 100vh}
+
+.active {
+    border-bottom: 1px solid #283a56;
+    
+  }
+
+  button{
+   background: transparent;
+   border: 0;
+   color: inherit;
+   font-family: inherit;
+  }
+
+
+    
+   
+    
+  }
+
+
+@media screen and (min-width : 500px){
+
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+    
+    
+    .btnservicesdivcallfunc{
+        background-color: black;
+        background-image: url(img/bgbricks.png);
+        background-size: contain;
+    }
+    
+    
+    .imholder{
+        display: flex;
+        width: 30%;
+        margin: -9px;
+    }
+
+    .imholder img{
+        max-width: 240px;
+    }
+
+    nav{
+        width: 70%;
+        display: flex;
+        justify-content: right;
+
+    }
+  
+    nav ul{
+        padding-right: 2em;
+        margin-top: 0.5em;
+        display: flex;
+        list-style: none;
+        color: #283a56;
+        user-select: none;
+        font-family: 'Poppins';
+        transition: color 0.5s ease-in;
+        font-size: 1.25rem;
+        gap: 1em;
+
+    
+    
+    }
+
+    #navbtn{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* nav ul button{
+        border: 0;
+        background-color: transparent;
+        font-family: "poppins";
+        user-select: none;
+    
+       
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: border 0.5s ease;
+    } */
+    nav ul li{
+        font-family: "poppins";
+        user-select: none;
+    
+       
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: border 0.5s ease;
+    }
+    iframe{
+        width: 100%;
+    height: 100vh}
+    
+    .active {
+        border-bottom: 1px solid #283a56;
+        
+      }
+    
+      button{
+       background: transparent;
+       border: 0;
+       color: inherit;
+       font-family: inherit;
+      }
+    
+}
+
+
+
+  
+

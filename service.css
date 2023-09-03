@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(img/bgbricks.png);
+    background-size: contain;
+}
+
+ ul{
+    padding: 1em;
+    list-style: none;
+}
+ ul li{
+    margin-bottom: 1em;
+    padding: 1em;
+    color: white;
+    background: rgba(0, 0, 0, 0.81);}
+
+.imgholder{
+    display: flex;
+    justify-content: center ;
+}
+
+ ul li img{
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titw{
+    color: black;
+    font-family: "Koulen";
+    text-align: center;
+}
+
+.titb{
+    color: white;
+    font-family: "Koulen";
+    text-align: center;
+}
+
+.cnt{
+    font-family: "poppins";
+    font-size: 0.85rem;
+    padding: 0.5em;
+    text-align: center;
+}
+.dst{
+    margin-top: 1em;
+}
+
+.linkwebw{
+    padding: 0.75em 1.25em;
+    border-radius: 2.5px;
+    border: 1px solid rgb(50, 50, 50);
+    color: black;
+}
+
+
+
+.linkweb{
+    padding: 0.75em 1.25em;
+    border-radius: 2.5px;
+    border: 1px solid white;
+    color: white;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
