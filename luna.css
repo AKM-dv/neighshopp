@@ -1,0 +1,265 @@
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0); /* Start at the bottom */
+  }
+  50% {
+      transform: translateY(530px); /* Move halfway up */
+  }
+  100% {
+      transform: translateY(0); /* Return to the bottom */
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+  background-color: black;
+
+}
+
+body{
+  
+  display: flex;
+
+  height: 0;
+ 
+  overflow-y: hidden;
+
+
+    background-image: url(Assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    transition: height 1s ease-in , opacity 1s ease
+
+}
+.percentage{
+
+    width: 248px;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.35em;
+    background-image: url(Assets/bholder.png);
+    color: white;
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    font-family: "Orbitron";
+    text-shadow: 0px 0px 22px 0px #139CFF, 0px 0px 14px 0px #139CFF inset;
+    color:#118de5 ;
+
+
+}
+
+/* @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+
+.center img{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s linear infinite; /* Apply the animation with a 4-second duration, linear timing, and infinite loop */
+
+  
+   
+
+}
+
+/* bars */
+.bars{
+  margin-top: 1em;
+  display: flex;
+}
+
+.bars ul{
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.bars ul li{
+  /* opacity: 0; */
+  margin-top: 2px;
+  height: 5px;
+  width: 30px;
+  transition: opacity 1s;
+  background: linear-gradient(180deg, #34DAFF 0%, #004A80 175%);
+}
+
+
+/* sections */
+
+
+#s1,#s3{
+  width: 32%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+#s2{
+  width: 34%;
+  height: 100vh;
+  /* background-color: green; */
+}
+
+#s3{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+}
+
+#ms3{
+  width: 80%;
+}
+
+/* sections */
+
+
+/* scale */
+
+
+
+.scale{
+  display: flex;
+  justify-content: center;
+ 
+  /* background-color: green; */
+  
+}
+.scalel{
+  padding: 0.5em;
+  
+  /* background-color: green; */
+}
+
+.impointholder{
+  
+  animation: moveUpDown 4s linear infinite;
+
+}
+
+.s1r{
+  width: 50%;
+}
+
+.s1l{
+  margin-top: 1em;
+  padding-left: 0.5em;
+ 
+
+}
+.sl1 img{
+  opacity: 0;
+  transition-delay: 1s;
+  transition:  opacity 1s ease
+
+}
+
+
+
+
+
+
+/* scale */
+
+/* S2 */
+
+.stop,.sbot{
+  height: 30vh;
+  /* background-color: green; */
+}
+.smid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  font-weight: 900;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: Gold;
+  background-position: 0%;
+  font-family: "Orbitron";
+  font-size: 2rem;
+  background-attachment: local;
+  color: #FFF;
+text-shadow: 0px 0px 13px #139CFF;
+font-family: Orbitron;
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+
+
+/* S2 */
+
+
+/* s1 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.bhold{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: White;
+  font-family: "Orbitron";
+  text-indent: 10px;
+  font-size: 1em;
+  height: 95px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(Assets/bholder.png);
+  
+  
+}
+#bb1,#bb2,#bb3,#bb4,#bb5,#bb6,#bb7{
+  visibility: hidden;
+}
+
+#bb3{
+  visibility:inherit
+}
+
+
+/* S1 */
+
+/* Battery */
+
+#ms2 {
+  /* background-color: yellow; */
+  top: 0;
+  height: 100%;
+  padding-top: 1em;
+  transform: translateX(60px);
+
+}
+
+
+/* Battery */
+
+
+
+
