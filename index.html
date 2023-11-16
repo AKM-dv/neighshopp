@@ -340,6 +340,13 @@ if (screenWidth < 768) { // Adjust this threshold as needed
 
 check()
 
+// Extract subdomain from the URL
+var subdomain = window.location.hostname.split('.')[0];
+
+// Use the subdomain to load specific content or make API requests
+console.log('Subdomain:', subdomain);
+
+
 
 </script>
 <!-- ------------responsive ------------ -->
