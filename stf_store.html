@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE</title>
+</head>
+<body>
+    <style>
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                background-color: rgb(18, 3, 46);
+            }
+            #main{
+                background-color: #F2F2F2;
+                max-width: 800px;
+                width: 100%;
+            }
+            .top{
+                display: flex;
+                gap: 1em;
+                align-items: center;
+                padding-top: 1em;
+                font-family: Poppins;
+                padding-left: 1em;
+                padding-bottom: 1em;
+            }
+           
+    </style>
+
+    <div id="main">
+        <div class="top">
+            <a href="/starfusion.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m4 10l-.707.707L2.586 10l.707-.707zm17 8a1 1 0 1 1-2 0zM8.293 15.707l-5-5l1.414-1.414l5 5zm-5-6.414l5-5l1.414 1.414l-5 5zM4 9h10v2H4zm17 7v2h-2v-2zm-7-7a7 7 0 0 1 7 7h-2a5 5 0 0 0-5-5z" />
+            </svg></a>
+            Products
+
+        </div>
+        <div class="pdsli">
+
+         
+                  <style>
+                        .card{
+                            max-width: 175px;
+                            width: 45%;
+                            padding: 0.4em;
+                            background-color: white;
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            border-radius: 5px;
+                        }
+                        .name{
+                            font-family: 'Poppins';
+                            font-size: 0.85rem;
+                            margin-top: 0.5em;
+                        }
+                        .price{
+                            font-family: 'Poppins';
+                            font-weight: bold;
+                            margin-top: 0.5em;
+                        }
+                        .pdsliui{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 0.25em;
+                            list-style: none;
+                            padding: 0.35em;
+                            padding-bottom: 50px;
+                        }
+                       
+                        
+                    </style>
+
+                <ul class="pdsliui">
+
+
+                    <li class="card">
+
+                        <div class="img">
+                            <img src="pd1.png" alt="">
+                        </div>
+                      
+                        <div class="name">
+                            YEEZUS - KANYE WEST OVERSIZE TEE.
+                        </div>
+                        <div class="price">
+                            ₹599
+                        </div>
+    
+                        <button class="addbtn" id="pdbtn" status= 0>
+                            <style>
+                                .addbtn{
+                                    border: 0;
+                                    background-color: #3878D7;
+                                    color: white;
+                                    font-family: 'Poppins';
+                                    font-size: 0.9rem;
+                                    padding: 0.5em;
+                                    margin-top: 0.5em;
+                                    text-align: center;
+                                    border-radius: 2px;
+                                    width: 100%;
+                                    
+    
+                                }
+                            </style>
+                            Add to cart
+                        </button>
+    
+    
+                    </li>
+
+                    <li class="card">
+
+                        <div class="img">
+                            <img src="pd2.png" alt="">
+                        </div>
+                      
+                        <div class="name">
+                            CHANNEL ORANGE - FRANK OCEAN OVERSIZE 
+                        </div>
+                        <div class="price">
+                            ₹599
+                        </div>
+    
+                        <button class="addbtn" id="pdbtn" status= 0>
+                            <style>
+                                .addbtn{
+                                    border: 0;
+                                    background-color: #3878D7;
+                                    color: white;
+                                    font-family: 'Poppins';
+                                    font-size: 0.9rem;
+                                    padding: 0.5em;
+                                    margin-top: 0.5em;
+                                    text-align: center;
+                                    border-radius: 2px;
+                                    width: 100%;
+                                    
+    
+                                }
+                            </style>
+                            Add to cart
+                        </button>
+    
+    
+                    </li>
+
+                    <li class="card">
+
+                        <div class="img">
+                            <img src="pd3.png" alt="">
+                        </div>
+                      
+                        <div class="name">
+                            WHOLE LOTTA RED - PLAYBOI  OVERSIZE TEE
+                        </div>
+                        <div class="price">
+                            ₹599
+                        </div>
+    
+                        <button class="addbtn" id="pdbtn" status= 0>
+                            <style>
+                                .addbtn{
+                                    border: 0;
+                                    background-color: #3878D7;
+                                    color: white;
+                                    font-family: 'Poppins';
+                                    font-size: 0.9rem;
+                                    padding: 0.5em;
+                                    margin-top: 0.5em;
+                                    text-align: center;
+                                    border-radius: 2px;
+                                    width: 100%;
+                                    
+    
+                                }
+                            </style>
+                            Add to cart
+                        </button>
+    
+    
+                    </li>
+
+             
+             
+              
+
+              
+
+                
+
+
+            </ul>
+
+            <div class="cart" id="cart">
+                
+                <div class="item">Total Items : <span class="ti" id="ti"></span> </div>
+                <div class="priceC">Price: ₹ <span class="tp" id="tp"></span> </div>
+                <button id="sendbtn">Order Now</button>
+                <style>
+                    .priceC{
+                        margin-top: 0.5em;
+                    }
+                    .cart{
+                        position: sticky;
+                        width: 100%;
+                        bottom: 0;
+                        font-size: 1rem;
+                        padding-bottom: 1em;
+                        padding-top: 1em;
+                        background-color: #3878D7;
+                        text-align: center;
+                        font-family: 'Poppins';
+                        color: white;
+                    }
+                    #sendbtn{
+                        padding: 1em;
+                        text-align: center;
+                        border: 1px solid white;
+                        border-radius: 2px;
+                        width: 80%;
+                        margin-top: 1em;
+                        font-family: 'Poppins';
+                        font-size: 1rem;
+                        background-color: #3878D7;
+                        color: white;
+
+
+                    }
+                    
+                </style>
+            </div>
+            
+        </div>
+
+        <script>
+            const cart = document.getElementById('cart');
+
+            TOTI = 0
+            TOTPRICE = 0
+            let LI = []
+            if(TOTI == 0){
+                        cart.style.display= "none";
+                    }
+
+           
+
+
+            const pdbtn = document.querySelectorAll('.addbtn'); 
+
+            document.getElementById('ti').innerText = TOTI;
+            document.getElementById('tp').innerText = TOTPRICE;
+
+
+            
+
+
+
+            
+
+            pdbtn.forEach(btn => {
+               
+                    btn.addEventListener('click', (event) => {
+                    if (btn.getAttribute('status') != 1){
+                    btn.innerText = "Remove from cart";
+                    btn.style.backgroundColor = "White";
+                    btn.style.color = "#3878D7";
+                    btn.style.fontSize = "0.9rem";
+                    btn.style.width = '100%'
+                    btn.style.padding  = '0.5em';
+                    btn.style.marginTop  = '0.5em';
+                    TOTI  = TOTI + 1;
+                    const parentElement = btn.closest('.card');
+                    const priceElement = parentElement.querySelector('.price'); 
+                    const name = parentElement.querySelector('.name').innerText; 
+                    if(TOTI == 0){
+                        cart.style.display = "none";
+                    }
+                    else{
+                        cart.style.display = 'block';
+                    }
+                    
+
+                    LI.push(name)
+                    console.log(LI)
+                  
+
+
+                    var Totalprice = priceElement.innerText;
+                    Totalprice = Totalprice.replace('₹','')
+                    TOTPRICE = TOTPRICE + Number(Totalprice)
+                    btn.style.border = '1px solid black';
+                    document.getElementById('ti').innerText = TOTI;
+                    document.getElementById('tp').innerText = TOTPRICE;
+
+
+
+                    btn.setAttribute('status','1');
+                    }
+                    else{
+                        btn.innerText = "Add to cart";
+                        btn.style.backgroundColor = "#3878D7";
+                        btn.style.color = "white";
+                        btn.style.border = 0;
+                        btn.style.fontSize = "0.9rem";
+                        btn.style.width = '100%'
+                        btn.style.padding  = '0.5em';
+                        btn.style.marginTop  = '0.5em';
+                        btn.setAttribute('status','0') ;
+                        TOTI  = TOTI - 1;
+                        const parentElement = btn.closest('.card');
+                        const priceElement = parentElement.querySelector('.price'); 
+                        var Totalprice = priceElement.innerText;
+                        Totalprice = Totalprice.replace('₹','')
+                        TOTPRICE = TOTPRICE - Number(Totalprice)
+                        const name = parentElement.querySelector('.name').innerText; 
+                        let index = LI.indexOf(name);
+                        LI.splice(index,1);
+                        console.log(LI)
+
+
+                        document.getElementById('ti').innerText = TOTI;
+                        document.getElementById('tp').innerText = TOTPRICE;
+                        if(TOTI == 0){
+                        cart.style.display= "none";
+                    }
+
+                    }
+                  
+
+                });
+
+               
+                
+            });
+
+            const sendbtn = document.getElementById("sendbtn")
+            sendbtn.addEventListener('click',(event)=>{
+                let message = `Hi, I want to order the following items from your Neighshop Store:\n`;
+                message += `Total Items: ${TOTI}\nPrice: ${TOTPRICE}\n Items List:\n`;
+
+                LI.forEach(item => {
+                    message += `- ${item}\n`; // Add each item with a line break
+                });
+
+                // Encode the message for URL
+                let encodedMessage = encodeURIComponent(message);
+
+                // Generate the WhatsApp message link
+                let whatsappLink = `https://wa.me/+918307802643/?text=${encodedMessage}`;
+
+                window.location.href = whatsappLink;
+
+                   
+                            });
+
+             
+
+
+
+
+            
+
+            
+        </script>
+
+    </div>
+  
+    
+</body>
+</html>
